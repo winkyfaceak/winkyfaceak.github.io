@@ -1,0 +1,46 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: James toy box!
+theme: ["PaperMod"]
+params:
+  # General settings
+  author: "James Collings"
+  description: "using the power of Hugo, I have a website"
+  showReadingTime: true
+  showTaxonomiesInMenu: true
+  showToc: true  # Show Table of Contents on each post
+  
+  # Appearance
+  defaultTheme: "auto"  # dark, light, auto
+  disableThemeToggle: true  # Allow visitors to toggle between light/dark modes
+  profileMode:
+    enabled: true
+    title: "A in progress computer programmer (TM)" # optional default will be site title
+    subtitle: "Oblivious"
+    imageUrl: "./img/MyGitHubPFP.png"
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Search
+        url: "/search"
+      - name: Archive
+        url: "/archives"
+      - name: Github
+        url: "https://github.com/winkyfaceak"
+  outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+  # Menu settings
+  ShowBreadCrumbs: true
+
+  homeInfoParams:
+    Title: Hi there /me "waves"
+    Content: Inspiring Programmer "TM"
+
+  # Optional settings
+  useHugoToc: true   # If you want to use Hugo's built-in ToC instead
+  comments: false    # Set to true if you want to enable comments (requires additional setup)
+  enableSearch: true # Enabling search functionality
